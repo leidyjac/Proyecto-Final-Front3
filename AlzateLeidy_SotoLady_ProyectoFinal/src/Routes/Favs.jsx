@@ -27,6 +27,7 @@ const Favs = () => {
           <Card
           key={dentist.id}
           dentist={dentist}
+          id = {dentist.id}
         />
 
           ))}

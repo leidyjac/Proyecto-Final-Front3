@@ -1,20 +1,11 @@
-import { useState, useEffect } from "react";
-import axios from "axios";
-import { useParams } from "react-router";
+import { useContext } from "react";
+import { ContextGlobal } from "../Components/utils/global.context";
 
 //Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
 
 const Detail = () => {
-  const [dentista, setDentista] = useState(null);
-  const { id } = useParams();
-
-  useEffect(() => {
-    axios
-      .get(`https://jsonplaceholder.typicode.com/users/${id}`)
-      .then((res) => {
-        setDentista(res.data);
-      });
-  }, [id]);
+  
+   const {dentista} = useContext(ContextGlobal)
 
   return (
     <>
