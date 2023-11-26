@@ -23,12 +23,18 @@ export const ContextProvider = ({ children }) => {
   }, [])
 
   useEffect(() => {
-    axios
-      .get(`https://jsonplaceholder.typicode.com/users/${id}`)
-      .then((res) => {
-        setDentista(res.data);
-      });
+    if (id) { 
+      axios
+        .get(`https://jsonplaceholder.typicode.com/users/${id}`)
+        .then((res) => {
+          setDentista(res.data);
+        })
+        .catch((error) => {
+          alert(`Error al obtener datos del dentista con ID ${id}`, error);
+        });
+    }
   }, [id]);
+  
 
 
 
