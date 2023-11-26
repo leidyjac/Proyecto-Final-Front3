@@ -7,7 +7,7 @@ import Navbar from "./Components/Navbar";
 function App() {
   return (
       <div className="App">
-           <h2>Consultorio Médico</h2>
+           <h2>Consultorio Odontológico</h2>
           <Navbar/>
           <Outlet/>
           <Footer/>

@@ -13,10 +13,16 @@ code {
 }
 .favButton{
   background-color: rgba(136, 136, 136, 0.116);
-  padding: 10px;
+  padding: 5px;
   border: none;
-  width: 100%;
-  cursor: pointer;
+  width: 35px;
+  cursor: pointer; 
+}
+
+button.favorito{
+  width: 80px;
+  height: 20px;
+
 }
 
 h1{
@@ -25,13 +31,18 @@ h1{
 
 nav{
   display: flex;
-  width: 80vw;
-  justify-content: flex-start;
-  padding: 1rem;
+  width: 30vw;
+  justify-content: flex-end;
+  padding: 2rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff; 
+  
 }
 
 a{
-  color: #000;
+  color: #333;
   text-decoration: none;
   margin: 5px;
   cursor: pointer;
@@ -120,3 +131,16 @@ tr:nth-child(even) {
 .dark > a {
   color: white;
 }
+.App h2{
+  font-size: 1.5rem;
+  color: #333;
+  padding: 0.5rem 0; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); 
+  margin-left: 5rem;
+
+}
+.card img{
+  width: 100%;
+   height: auto;
+}
+

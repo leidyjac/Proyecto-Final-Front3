@@ -25,7 +25,11 @@ const Home = () => {
       <h1>Home</h1>
       <div className='card-grid'>
         {dentistList.map((dentist) => (
-           <Card key ={dentist.id} dentist = {dentist}/>
+           <Card 
+           key ={dentist.id} 
+           dentist = {dentist}
+           id = {dentist.id}
+           />
 
         ))}
         
