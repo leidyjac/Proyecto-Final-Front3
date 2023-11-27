@@ -6,11 +6,13 @@ import { ContextGlobal } from '../Components/utils/global.context'
 //Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
 const Home = () => {
      
-  const {dentistList} = useContext(ContextGlobal)
+  const {dentistList, theme} = useContext(ContextGlobal)
+  
   
 
   return (
-    <main className="" >
+    <main className={`${theme}`} >
+ 
       <h1>Home</h1>
       <div className='card-grid'>
         {dentistList.map((dentist) => (
@@ -21,8 +23,8 @@ const Home = () => {
            />
 
         ))}
-        
       </div>
+      
     </main>
   )
 }

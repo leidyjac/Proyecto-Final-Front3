@@ -53,14 +53,16 @@ a:hover{
 
 footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   text-align: center;
   padding: 2rem;
   position: relative;
   bottom: 0;
   width: 90%;
   height: 40px;
-  margin-top: 2rem;
+  margin-top: 5rem;
+  border-top: 30px solid rgba(247, 33, 33, 0.854); 
+  padding-top: 10px; 
 }
 
 footer > img{
@@ -105,13 +107,15 @@ form{
   margin: 0 auto;
 }
 
-table {
- border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
-    display: table;
+.table {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-gap: 8px; 
     border: 1px solid #ccc;
-
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-left: 5%;
+    
 }
 
 td, th {
@@ -128,6 +132,12 @@ tr:nth-child(even) {
   background-color: #12121296;
   color: white;
 }
+
+.light{
+  background-color: white;
+  color: black;
+}
+
 .dark > a {
   color: white;
 }
@@ -140,7 +150,8 @@ tr:nth-child(even) {
 
 }
 .card img{
-  width: 100%;
+   width: 100%;
    height: auto;
 }
+
 

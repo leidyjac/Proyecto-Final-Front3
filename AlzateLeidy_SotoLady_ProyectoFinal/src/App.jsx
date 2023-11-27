@@ -6,15 +6,20 @@ import { ContextProvider } from "./Components/utils/global.context";
 
 
 function App() {
+
+
   return (
+    
       <div className="App">
-           <h2>Consultorio Odontológico</h2>
+            <h2>Consultorio Odontológico</h2>
+           
         <ContextProvider>
-          <Navbar/>
+           <Navbar/>
           <Outlet/>
-          <Footer/>
         </ContextProvider>
+          <Footer/>  
       </div>
+    
   );
 }
 

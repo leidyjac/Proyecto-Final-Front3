@@ -1,6 +1,6 @@
 import { createContext, useEffect } from "react";
 import axios from "axios";
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { useParams } from "react-router-dom";  
 
 export const initialState = {theme: "", data: []}
@@ -11,6 +11,7 @@ export const ContextProvider = ({ children }) => {
     
   const[dentistList, setDentistList] = useState([])
   const [dentista, setDentista] = useState(null);
+  const [theme, setTheme] = useState('light')
   const { id } = useParams();
 
   useEffect(() => {
@@ -34,15 +35,26 @@ export const ContextProvider = ({ children }) => {
         });
     }
   }, [id]);
+
+      const manejadorTema = () => {
+      setTheme(theme === 'dark' ? 'light' : 'dark')
+      console.log("nuevo tema: "+ theme)
+   };
+
+   /*const providerValue = useMemo(() => {
+    console.log('Valor del tema en el proveedor:', theme);
+    return { theme, manejadorTema };
+  }, [theme, manejadorTema]);*/
+        
   
-
-
 
   return (
     <ContextGlobal.Provider 
       value={{
         dentistList,
-        dentista
+        dentista,
+        manejadorTema,
+        theme
       }}>
       {children}
     </ContextGlobal.Provider>
