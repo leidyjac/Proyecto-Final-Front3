@@ -8,7 +8,14 @@ import { ContextGlobal } from "../Components/utils/global.context";
 const Favs = () => {
 
   const [datos, setDatos] = useState([])
-  const {theme} = useContext(ContextGlobal)
+  const {theme, setTheme} = useContext(ContextGlobal)
+
+  useEffect(() => {
+    const temaGuardado = localStorage.getItem('tema');
+        if (temaGuardado) {
+            setTheme(temaGuardado);
+          }
+    },[setTheme]);
   
   
   useEffect(() => {

@@ -153,5 +153,18 @@ tr:nth-child(even) {
    width: 100%;
    height: auto;
 }
+.themeButton{
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.iconoBoton{
+  width: 20px;
+  height: auto; 
+  display: block,
+}
 
 

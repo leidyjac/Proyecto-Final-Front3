@@ -1,12 +1,18 @@
 import Form from "../Components/Form";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { ContextGlobal } from "../Components/utils/global.context";
 
-//Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
 
 const Contact = () => {
 
-  const {theme} = useContext(ContextGlobal)
+  const {theme, setTheme} = useContext(ContextGlobal)
+
+  useEffect(() => {
+    const temaGuardado = localStorage.getItem('tema');
+        if (temaGuardado) {
+            setTheme(temaGuardado);
+          }
+    },[]);
 
   return (
     <div className={`${theme}`}>

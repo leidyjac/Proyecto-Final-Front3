@@ -16,7 +16,7 @@ const Navbar = () => {
             <Link to= '/favs'>Favs</Link>
 
       {/* Deberan implementar ademas la logica para cambiar de Theme con el button */}
-          <button onClick={manejadorTema}>Change theme</button>
+          <button onClick={manejadorTema} className="themeButton"><img src="images/moon-solid.png" alt="Moon" className = 'iconoBoton'/></button>
     </nav>
   )
 }
