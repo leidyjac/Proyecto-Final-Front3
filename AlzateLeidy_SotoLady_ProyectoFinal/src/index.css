@@ -1,35 +1,34 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-.favButton{
+.favButton {
   background-color: rgba(136, 136, 136, 0.116);
   padding: 5px;
   border: none;
   width: 35px;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
-button.favorito{
+button.favorito {
   width: 80px;
   height: 20px;
-
 }
 
-h1{
+h1 {
   text-align: center;
 }
 
-nav{
+nav {
   display: flex;
   width: 30vw;
   justify-content: flex-end;
@@ -37,19 +36,18 @@ nav{
   position: absolute;
   top: 0;
   right: 0;
-  color: #fff; 
-  
+  color: #fff;
 }
 
-a{
+a {
   color: #333;
   text-decoration: none;
   margin: 5px;
   cursor: pointer;
 }
-a:hover{
+a:hover {
   color: rgb(136, 136, 136);
-} 
+}
 
 footer {
   display: flex;
@@ -61,20 +59,20 @@ footer {
   width: 90%;
   height: 40px;
   margin-top: 5rem;
-  border-top: 30px solid rgba(247, 33, 33, 0.854); 
-  padding-top: 10px; 
+  border-top: 30px solid rgba(247, 33, 33, 0.854);
+  padding-top: 10px;
 }
 
-footer > img{
+footer > img {
   width: 200px;
   margin: 0;
 }
-footer > p{
+footer > p {
   margin: 0;
   padding-top: 0.7rem;
 }
 
-form{
+form {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -83,7 +81,7 @@ form{
   margin: 0 auto;
 }
 
-.card{
+.card {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -93,11 +91,11 @@ form{
   border: 0.5px solid rgb(136, 136, 136);
 }
 
-.card:hover{
+.card:hover {
   border: 0.5px solid rgb(206, 217, 142);
 }
 
-.card-grid{
+.card-grid {
   display: flex;
   justify-content: space-evenly;
   gap: 1rem;
@@ -108,17 +106,17 @@ form{
 }
 
 .table {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    grid-gap: 8px; 
-    border: 1px solid #ccc;
-    margin-left: 3%;
-    margin-right: 3%;
-    padding-left: 5%;
-    
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 8px;
+  border: 1px solid #ccc;
+  margin-left: 3%;
+  margin-right: 3%;
+  padding-left: 5%;
 }
 
-td, th {
+td,
+th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
@@ -128,12 +126,12 @@ tr:nth-child(even) {
   background-color: #dddddd;
 }
 
-.dark{
+.dark {
   background-color: #12121296;
   color: white;
 }
 
-.light{
+.light {
   background-color: white;
   color: black;
 }
@@ -141,19 +139,18 @@ tr:nth-child(even) {
 .dark > a {
   color: white;
 }
-.App h2{
+.App h2 {
   font-size: 1.5rem;
   color: #333;
-  padding: 0.5rem 0; 
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); 
+  padding: 0.5rem 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
   margin-left: 5rem;
-
 }
-.card img{
-   width: 100%;
-   height: auto;
+.card img {
+  width: 100%;
+  height: auto;
 }
-.themeButton{
+.themeButton {
   position: relative;
   overflow: hidden;
   background-color: transparent;
@@ -161,10 +158,8 @@ tr:nth-child(even) {
   cursor: pointer;
 }
 
-.iconoBoton{
+.iconoBoton {
   width: 20px;
-  height: auto; 
-  display: block,
+  height: auto;
+  display: block;
 }
-
-

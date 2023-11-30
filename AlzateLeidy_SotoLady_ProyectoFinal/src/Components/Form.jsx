@@ -28,7 +28,7 @@ const Form = () => {
   return (
     <div>
       <h1>Ingresa tus datos</h1>
-      <form onSubmit={handleSubmit} className="form"  >
+      <form onSubmit={handleSubmit} className="form">
         <label htmlFor="nombre">Nombre:</label>
         <input
           type="text"
