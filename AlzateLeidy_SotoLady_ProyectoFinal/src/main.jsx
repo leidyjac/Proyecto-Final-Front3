@@ -7,7 +7,7 @@ import Contact from "./Routes/Contact.jsx";
 import Detail from "./Routes/Detail.jsx";
 import Favs from "./Routes/Favs.jsx";
 import Home from "./Routes/Home.jsx";
-import NotFound from "./Routes/NotFound.jsx";
+
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
